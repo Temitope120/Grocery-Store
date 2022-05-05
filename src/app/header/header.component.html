@@ -1,0 +1,84 @@
+<header class="header">
+    <a class="logo"> 
+        <i class="fa-fa-shopping-basket"></i>
+        groco
+    </a>
+    <nav class="navbar">
+        <a routerLink ="">Home</a>
+        <a routerLink =""> features</a>
+        <a routerLink ="">products</a>
+        <a routerLink ="">categories</a>
+        <a routerLink ="">review</a>
+        <a routerLink ="">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn">
+
+        </div>
+        <div class="fa fa-search" id="search-btn" (click) = "toggleSearch()">
+
+        </div>
+        <div class="fa fa-shopping-cart" id="cart-btn" (click) ="toggleCart()">
+
+        </div>
+        <div class="fa fa-user" id="login-btn" (click) ="login()">
+
+        </div>
+       
+    </div>
+
+    <form action="" class="search-form" *ngIf = "displaySearchbar">
+        <input type="search" id="search-box" placeholder="search">
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <div class="shopping-cart" *ngIf = "displayShoppingCart">
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="../../assets/image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>Watermelon</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="../../assets/image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>Onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fa fa-trash"></i>
+            <img src="../../assets/image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+
+    <form class="loginForm" *ngIf = "displayLogin">
+        <h3>Login now</h3>
+        <input type="text" name="" id="" placeholder ="enter email" class="box">
+        <input type="password" placeholder="enter password" class="box">
+        <p>Forgot your password <a href="">Click here</a></p>
+        <p>I don't have an account <a href="">Sign Up</a></p>
+        <input type="submit" value="Login" class="btn">
+    
+
+        
+    </form>
+
+</header>
+

@@ -1,0 +1,19 @@
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box{
+    padding: 3rem 2rem;
+    background-color: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--bx-shadow);
+}
+.features .box-container .box:hover{
+    outline: var(--outline);
+    outline-offset: 0rem;
+    
+}

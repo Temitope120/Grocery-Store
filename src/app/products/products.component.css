@@ -1,0 +1,86 @@
+.home{
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/image/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+
+
+}
+.home .content{
+    text-align: center;
+    width: 100%;
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color: var(--orange);
+}
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height:1.8;
+
+}
+
+@media screen and (max-width:1024px){
+    .home{
+        padding: 12rem 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .home .content{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .home{
+        padding: 12rem 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .home .content{
+       width: 100%;
+    }
+    .home .content h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 425px) and (max-width: 450px){
+    .home{
+        padding: 12rem 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .home .content h3{
+        font-size: 2rem;
+    }
+    .home .content{
+        width: 100%;
+     }
+    .home .content p{
+        font-size: 1rem;
+    }
+    
+}

@@ -11,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   displaySearchbar = false;
   displayShoppingCart = false;
-  displayLogin = false
+  displayLogin = false;
+  displayLinks = false;
+
 
   toggleSearch(){
     this.displaySearchbar = !this.displaySearchbar
@@ -23,6 +25,9 @@ export class HeaderComponent implements OnInit {
   login(){
     this.displayLogin = !this.displayLogin;
   }
+  toggleMenu(){
+    this.displayLinks = !this.displayLinks
+  }
 
 
   // private displayShoppingCart = DisplayCart
@@ -31,7 +36,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.displaySearchbar = false;
     this.displaySearchbar = false;
-    this.displayLogin = false
+    this.displayLogin = false;
+    this.displayLinks = false;
   }
 
 }
